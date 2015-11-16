@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sports?!?!?!?</title>
+    <link rel="stylesheet" href="/home.css">
+  </head>
+
+  <body>
+      <% @data_hash.each do |team, positions| %>
+      <h1>Team: <%= team %> </h1>
+      <% positions.each do |position, person| %>
+      <p><%= position %>: <%= person %> </p>
+      <% end %>
+      <% end %>
+  </body>
+</html>
